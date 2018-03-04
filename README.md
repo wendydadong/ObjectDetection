@@ -10,9 +10,9 @@ python3 objDetect.py
 ```python  
 PATH_TO_CKPT = '/media/sf_XubuntuShareFile/frozen_inference_graph_resnet.pb'  
 ```  
-Try to change other pretrained models in the following reference projects.
+Try to change other pretrained models in the following reference project.
 
-* Reference projects:  
+* Reference project:  
 [MobileNet SSD Tensorflow](https://github.com/tensorflow/models/tree/master/research/object_detection) 
 
 
