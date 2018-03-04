@@ -1,12 +1,12 @@
 # ObjDetection
 This repository contains some scipts about object detection models implemented in TensorFlow:
 
-* How to run this test:  
+* How to run:  
 ```python
 python3 objDetect.py
 ```
 
-* Notice pretrained models in the file named pbModel  
+* Notice pretrained models in the file folder named `pbModels`  
 ```python  
 PATH_TO_CKPT = '/media/sf_XubuntuShareFile/frozen_inference_graph_resnet.pb'  
 ```  
