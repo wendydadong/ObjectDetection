@@ -1,6 +1,17 @@
 # /media/sf_XubuntuShareFile/frozen_inference_graph.pb
 # /media/sf_XubuntuShareFile/frozen_inference_graph_resnet.pb
 # /media/sf_XubuntuShareFile/SSD_Mobilenet.pb
+#                            ssd_inception_v2
+#                            faster_rcnn_inception_v2
+#                            faster_rcnn_resnet50
+#                            faster_rcnn_resnet50_lowproposals
+#                            faster_rcnn_resnet101
+#                            rfcn_resnet101
+#                            faster_rcnn_resnet101_lowproposals
+#                            inception_resnet_v2_atrous
+#                            inception_resnet_v2_atrous_lowproposals
+#                            faster_rcnn_nas
+#                            faster_rcnn_nas_lowproposals
 # Person_SSD_Mobilenet_Xincheng_BLDG1_81559.pb
 
 import tensorflow as tf
@@ -11,7 +22,7 @@ import time
 detection_graph = tf.Graph()
 with detection_graph.as_default():
     od_graph_def = tf.GraphDef()
-    with tf.gfile.GFile('/media/sf_XubuntuShareFile/frozen_inference_graph_resnet.pb', 'rb') as fid:
+    with tf.gfile.GFile('/media/sf_XubuntuShareFile/faster_rcnn_nas_lowproposals.pb', 'rb') as fid:
         serialized_graph = fid.read()
         od_graph_def.ParseFromString(serialized_graph)
         tf.import_graph_def(od_graph_def, name='')
@@ -73,3 +84,27 @@ def show_detection(image_np, boxes):
 #    cv2.waitKey(0)
 
 show_detection(image_np,high_conf_boxes)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
