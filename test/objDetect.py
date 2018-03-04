@@ -85,26 +85,3 @@ def show_detection(image_np, boxes):
 
 show_detection(image_np,high_conf_boxes)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
